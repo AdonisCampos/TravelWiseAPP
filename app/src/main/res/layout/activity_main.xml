@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="@drawable/fondo"
+    android:outlineAmbientShadowColor="#090000"
+    android:outlineSpotShadowColor="#0B0909"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/ImgLogin"
+        android:layout_width="385dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgLogo"
+        app:srcCompat="@drawable/usuario" />
+
+    <ImageView
+        android:id="@+id/ImgLogo"
+        android:layout_width="482dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="36dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtUsuarioLayout"
+        android:layout_width="283dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#1D024E"
+        android:textColor="@color/black"
+        app:boxBackgroundColor="#CCB2FA"
+        app:boxStrokeColor="#0E0D0D"
+        app:boxStrokeErrorColor="#090909"
+        app:counterOverflowTextColor="@color/BLUE"
+        app:counterTextColor="@color/BLUE"
+        app:errorTextColor="#050505"
+        app:helperTextTextColor="#0B0A0A"
+        app:hintTextColor="#040303"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgLogin"
+        app:placeholderTextColor="#1E0250"
+        app:prefixTextColor="#210259"
+        app:suffixTextColor="#1C0349">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtUsuario"
+            android:layout_width="261dp"
+            android:layout_height="73dp"
+            android:drawableStart="@drawable/persona"
+            android:drawableTint="#1A0145"
+            android:foregroundTint="#040303"
+            android:hint="USUARIO"
+            android:inputType="text"
+            android:textColor="#0E0E0E"
+            android:textColorHint="#1A0147" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSesion"
+        android:layout_width="258dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#05095C"
+        android:backgroundTintMode="add"
+        android:text="INICIAR SESION"
+        android:textAlignment="center"
+        android:textColor="#F8F6F6"
+        android:textColorHighlight="#400303"
+        android:textColorHint="#770707"
+        android:textColorLink="#550909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContraseña" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="259dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#05095C"
+        android:backgroundTintMode="add"
+        android:text="CREAR UNA CUENTA"
+        android:textAlignment="center"
+        android:textColor="#F8F6F6"
+        android:textColorHighlight="#400303"
+        android:textColorHint="#770707"
+        android:textColorLink="#550909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNoRegistrado" />
+
+    <TextView
+        android:id="@+id/lblNoRegistrado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="No tienes una cuenta?"
+        android:textAlignment="center"
+        android:textColor="#1F0253"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSesion" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtContraseña"
+        android:layout_width="287dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="8dp"
+        android:outlineAmbientShadowColor="#17033A"
+        android:outlineSpotShadowColor="#1A0345"
+        android:textColorHint="#16013C"
+        app:boxBackgroundColor="#CCB2FA"
+        app:boxStrokeColor="#190242"
+        app:boxStrokeErrorColor="#23025E"
+        app:counterOverflowTextColor="@color/BLUE"
+        app:counterTextColor="@color/BLUE"
+        app:endIconMode="password_toggle"
+        app:errorTextColor="#1D034A"
+        app:helperTextTextColor="#1C024A"
+        app:hintTextColor="#1D044A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioLayout"
+        app:placeholderTextColor="#1A0345"
+        app:prefixTextColor="#1D0449"
+        app:suffixTextColor="#17013E">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtContraseñaLayout"
+            android:layout_width="262dp"
+            android:layout_height="76dp"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawableTint="#1B0149"
+            android:drawableTintMode="src_in"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:outlineAmbientShadowColor="#050505"
+            android:outlineSpotShadowColor="#070505"
+            android:shadowColor="#070606"
+            android:textColor="#070707"
+            android:textColorHighlight="#000832"
+            android:textColorHint="#1A0147"
+            android:textColorLink="#180142"
+            app:passwordToggleTint="@color/BLUE" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

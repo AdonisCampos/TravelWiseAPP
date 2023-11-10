@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/fondo"
+    tools:context=".Check_In_Activity">
+
+    <Button
+        android:id="@+id/btnRegistrado"
+        android:layout_width="204dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#05095C"
+        android:backgroundTintMode="add"
+        android:text="INICIAR SESION"
+        android:textAlignment="center"
+        android:textColor="#F8F6F6"
+        android:textColorHighlight="#400303"
+        android:textColorHint="#770707"
+        android:textColorLink="#550909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRegistardo" />
+
+    <TextView
+        android:id="@+id/lblRegistardo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ya tienes una cuenta? "
+        android:textAlignment="center"
+        android:textColor="#1F0253"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarse" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="267dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/email"
+        android:ems="10"
+        android:hint="EMAIL"
+        android:inputType="text"
+        android:textAlignment="inherit"
+        android:textColor="#0B0A0A"
+        android:textColorHighlight="#051361"
+        android:textColorHint="#05134A"
+        android:textColorLink="#03115E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioRegistrar" />
+
+    <EditText
+        android:id="@+id/txtContraseñaRegistro"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="267dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="CONTRASEÑA"
+        android:inputType="text"
+        android:textAlignment="inherit"
+        android:textColor="#0B0A0A"
+        android:textColorHighlight="#051361"
+        android:textColorHint="#05134A"
+        android:textColorLink="#03115E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <EditText
+        android:id="@+id/txtContraseñaRegistroConfirmar"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="267dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="56dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="CONFIRMAR CONTRASEÑA"
+        android:inputType="text"
+        android:textAlignment="inherit"
+        android:textColor="#0B0A0A"
+        android:textColorHighlight="#051361"
+        android:textColorHint="#05134A"
+        android:textColorLink="#03115E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <EditText
+        android:id="@+id/txtUsuarioRegistrar"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/persona"
+        android:ems="10"
+        android:hint="USUARIO"
+        android:inputType="text"
+        android:textAlignment="inherit"
+        android:textColor="#040303"
+        android:textColorHighlight="#030353"
+        android:textColorHint="#051E67"
+        android:textColorLink="#03115E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgLogo2" />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="204dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#05095C"
+        android:backgroundTintMode="add"
+        android:text="REGISTRARSE"
+        android:textAlignment="center"
+        android:textColor="#F8F6F6"
+        android:textColorHighlight="#400303"
+        android:textColorHint="#770707"
+        android:textColorLink="#550909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContraseñaRegistroConfirmar" />
+
+    <ImageView
+        android:id="@+id/ImgLogo2"
+        android:layout_width="388dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="277dp"
+        android:layout_height="388dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/borde"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!-- Contenido del LinearLayout -->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImgRegistro"
+        android:layout_width="175dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="56dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrado"
+        app:srcCompat="@drawable/registro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
