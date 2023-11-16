@@ -16,10 +16,11 @@
         tools:context=".MainActivity">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="285dp"
+            android:layout_height="123dp"
             android:layout_gravity="center"
-            android:text="SELECCIONA UN PAIS:"
+            android:text="SELECCIONA UN PAIS PARA VER TUS REGISTOS DE DESTINO Y EL BOTON MAS PARA AGREGAR UN NUEVO DESTINO"
+            android:textAlignment="center"
             android:textColor="#27016A"
             android:textSize="20sp"
             android:textStyle="bold" />
