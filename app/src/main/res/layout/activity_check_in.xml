@@ -126,7 +126,7 @@
         android:textColorLink="#03115E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ImgLogoCiudad" />
+        app:layout_constraintTop_toBottomOf="@+id/ImgEditarRecomendar" />
 
     <Button
         android:id="@+id/btnRegistro"
@@ -146,7 +146,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtContraseñaRegistroConfirmar" />
 
     <ImageView
-        android:id="@+id/ImgLogoCiudad"
+        android:id="@+id/ImgEditarRecomendar"
         android:layout_width="360dp"
         android:layout_height="152dp"
         android:layout_marginTop="28dp"

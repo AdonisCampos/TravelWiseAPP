@@ -16,22 +16,20 @@
         tools:context=".MainActivity">
 
         <TextView
-            android:layout_width="285dp"
-            android:layout_height="123dp"
+            android:layout_width="279dp"
+            android:layout_height="142dp"
             android:layout_gravity="center"
-            android:text="SELECCIONA UN PAIS PARA VER TUS REGISTOS DE DESTINO Y EL BOTON MAS PARA AGREGAR UN NUEVO DESTINO"
+            android:text="SELECCIONA UN PAIS PARA VER TUS REGISTOS DE DESTINO Y MODIFICARLOS, EL BOTON MAS PARA AGREGAR UN NUEVO DESTINO"
             android:textAlignment="center"
             android:textColor="#27016A"
-            android:textSize="20sp"
+            android:textSize="21sp"
             android:textStyle="bold" />
 
         <ListView
             android:id="@+id/paisesListView"
             android:layout_width="match_parent"
             android:layout_height="618dp"
-            android:layout_weight="1"
-            android:divider="@android:color/darker_gray"
-            android:dividerHeight="0.5dp">
+            android:layout_weight="1">
 
 
         </ListView>
@@ -59,7 +57,7 @@
                 app:srcCompat="@drawable/back" />
 
             <ImageButton
-                android:id="@+id/btnAnt"
+                android:id="@+id/btnAnteCity"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:layout_marginStart="8dp"

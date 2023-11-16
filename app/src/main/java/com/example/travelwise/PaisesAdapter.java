@@ -1,6 +1,7 @@
 package com.example.travelwise;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,12 +42,15 @@ public class PaisesAdapter extends ArrayAdapter<String> {
         holder.itemImage.setImageResource(images[position]);
         holder.CountriesTitle.setText(CountriesName[position]);
         holder.CountriesDescription.setText(CountriesDescription[position]);
-        singleItem.setOnClickListener(new View.OnClickListener() {
+        holder.itemImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Toast.makeText(getContext(),"HAZ SELECCIONADO "+ CountriesName[position],Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, Recommendations_add_and_cities_activity.class);
+                intent.putExtra("PAIS_SELECCIONADO", CountriesName[position]);
+                context.startActivity(intent);
             }
         });
+
         return singleItem;
     }
 }

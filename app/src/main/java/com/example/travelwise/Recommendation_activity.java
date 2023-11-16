@@ -14,8 +14,8 @@ public class Recommendation_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recommendation);
-        ImageButton imageb1 = findViewById(R.id.btnAnt);
-        ImageButton imageb2 = findViewById(R.id.btnPri);
+        ImageButton imageb1 = findViewById(R.id.btnAnteCity);
+        ImageButton imageb2 = findViewById(R.id.btnPrinCity);
         Button btnAddRecomendar = findViewById(R.id.btnRecomendarAdd);
 
         imageb1.setOnClickListener(new View.OnClickListener() {

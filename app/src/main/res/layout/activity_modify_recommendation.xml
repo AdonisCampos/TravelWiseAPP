@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/fondodos"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Modify_Recommendation">
+
+    /
+
+    <ImageView
+        android:id="@+id/ImgEditarRec"
+        android:layout_width="350dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/editarrecomendar" />
+
+    <TextView
+        android:id="@+id/lbltitleEditar"
+        android:layout_width="377dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="44dp"
+        android:text="EDITA TUS RECOMENDACIONES"
+        android:textAlignment="center"
+        android:textColor="#020F5A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgEditarRec" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="366dp"
+        android:layout_height="356dp"
+        android:background="@drawable/borde"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbltitleEditar"
+        app:layout_constraintVertical_bias="0.222">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSpinner"
+            android:layout_width="332dp"
+            android:layout_height="48dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayaoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="101dp">
+
+                <Spinner
+                    android:id="@+id/SpinnerEditarRecomendar"
+                    android:layout_width="324dp"
+                    android:layout_height="65dp"
+                    android:entries="@array/recomendar"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGuardarRecomendar"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:backgroundTint="#05095C"
+            android:backgroundTintMode="add"
+            android:text="GUARDAR"
+            android:textAlignment="center"
+            android:textColor="#F8F6F6"
+            android:textColorHighlight="#400303"
+            android:textColorHint="#770707"
+            android:textColorLink="#550909" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButtonRetornar"
+        android:layout_width="97dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPrincipal"
+        android:layout_width="87dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonRetornar"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

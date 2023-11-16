@@ -13,8 +13,8 @@ public class Schedule_city_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule_city);
-        ImageButton imageA7 = findViewById(R.id.btnAnt);
-        ImageButton imageB8 = findViewById(R.id.btnPri);
+        ImageButton imageA7 = findViewById(R.id.btnAnteCity);
+        ImageButton imageB8 = findViewById(R.id.btnPrinCity);
 
         imageA7.setOnClickListener(new View.OnClickListener() {
             @Override

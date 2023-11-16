@@ -34,7 +34,9 @@ public class Countries_Activity extends AppCompatActivity {
 
         ImageButton imageButtonMore = findViewById(R.id.imagemore);
         ImageButton imageButtonback = findViewById(R.id.backHome);
-        ImageButton imageButtonhome = findViewById(R.id.btnAnt);
+        ImageButton imageButtonhome = findViewById(R.id.btnAnteCity);
+
+
         imageButtonMore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

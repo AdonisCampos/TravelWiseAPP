@@ -19,8 +19,8 @@ public class City_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_city);
         Spinner spinnerCiudades = findViewById(R.id.SpinnerCiudades);
-        ImageButton imagereturn = findViewById(R.id.btnAnt);
-        ImageButton imageHome = findViewById(R.id.btnPri);
+        ImageButton imagereturn = findViewById(R.id.btnAnteCity);
+        ImageButton imageHome = findViewById(R.id.btnPrinCity);
         Button btnNext = findViewById(R.id.btnNext);
         Button btnAddCity = findViewById(R.id.btnAddCity);
 

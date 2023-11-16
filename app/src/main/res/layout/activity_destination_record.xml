@@ -12,7 +12,7 @@
     /
 
     <TextView
-        android:id="@+id/lbltitle"
+        android:id="@+id/lbltitleEditar"
         android:layout_width="391dp"
         android:layout_height="70dp"
         android:layout_marginTop="20dp"
@@ -23,10 +23,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ImgLogoCiudad" />
+        app:layout_constraintTop_toBottomOf="@+id/ImgEditarRecomendar" />
 
     <ImageView
-        android:id="@+id/ImgLogoCiudad"
+        android:id="@+id/ImgEditarRecomendar"
         android:layout_width="331dp"
         android:layout_height="99dp"
         android:layout_marginTop="4dp"
@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ImgLogoCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/ImgEditarRecomendar"
         app:layout_constraintVertical_bias="0.503">
 
 
@@ -89,17 +89,17 @@
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/btnPri"
+        android:id="@+id/btnPrinCity"
         android:layout_width="75dp"
         android:layout_height="49dp"
         android:layout_marginTop="24dp"
         android:background="@android:color/transparent"
-        app:layout_constraintStart_toEndOf="@+id/btnAnt"
+        app:layout_constraintStart_toEndOf="@+id/btnAnteCity"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@drawable/home" />
 
     <ImageButton
-        android:id="@+id/btnAnt"
+        android:id="@+id/btnAnteCity"
         android:layout_width="80dp"
         android:layout_height="37dp"
         android:layout_marginStart="132dp"

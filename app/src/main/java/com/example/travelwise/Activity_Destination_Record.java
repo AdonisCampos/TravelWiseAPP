@@ -19,8 +19,8 @@ public class Activity_Destination_Record extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_destination_record);
         Spinner spinnerPaises = findViewById(R.id.spinnerPaises);
-        ImageButton imageBack = findViewById(R.id.btnAnt);
-        ImageButton imageHome = findViewById(R.id.btnPri);
+        ImageButton imageBack = findViewById(R.id.btnAnteCity);
+        ImageButton imageHome = findViewById(R.id.btnPrinCity);
         Button btnContinuar = findViewById(R.id.btnRegistro);
 
 

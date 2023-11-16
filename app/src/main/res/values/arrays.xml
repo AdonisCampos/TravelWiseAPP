@@ -26,4 +26,14 @@
         <item>Usulután</item>
     </array>
 
+
+        <string-array name="recomendar">
+            <item>Recomendación 1</item>
+            <item>Recomendación 2</item>
+            <item>Recomendación 3</item>
+            <item>Recomendación 4</item>
+        </string-array>
+
+
+
 </resources>

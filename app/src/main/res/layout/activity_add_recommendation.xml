@@ -22,11 +22,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ImgLogoCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/ImgEditarRecomendar"
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/ImgLogoCiudad"
+        android:id="@+id/ImgEditarRecomendar"
         android:layout_width="350dp"
         android:layout_height="113dp"
         android:layout_marginTop="16dp"
@@ -117,18 +117,18 @@
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/btnPri"
+        android:id="@+id/btnPrinCity"
         android:layout_width="105dp"
         android:layout_height="61dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:background="@android:color/transparent"
-        app:layout_constraintStart_toEndOf="@+id/btnAnt"
+        app:layout_constraintStart_toEndOf="@+id/btnAnteCity"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@drawable/home" />
 
     <ImageButton
-        android:id="@+id/btnAnt"
+        android:id="@+id/btnAnteCity"
         android:layout_width="73dp"
         android:layout_height="64dp"
         android:layout_marginStart="116dp"

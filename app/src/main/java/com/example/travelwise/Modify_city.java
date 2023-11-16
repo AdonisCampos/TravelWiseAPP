@@ -7,28 +7,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Add_recommendation extends AppCompatActivity {
+public class Modify_city extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_recommendation);
-        ImageButton imageb3 = findViewById(R.id.btnAnteCity);
-        ImageButton imageb4 = findViewById(R.id.btnPrinCity);
+        setContentView(R.layout.activity_modify_city);
+        ImageButton imageB11 = findViewById(R.id.imageButtonBack);
+        ImageButton imageA12 = findViewById(R.id.imageButtonHome);
 
-
-        imageb3.setOnClickListener(new View.OnClickListener() {
+        imageB11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Add_recommendation.this, Recommendation_activity.class);
+                Intent intent = new Intent(Modify_city.this, Recommendations_add_and_cities_activity.class);
                 startActivity(intent);
             }
         });
-        imageb4.setOnClickListener(new View.OnClickListener() {
+        imageA12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Add_recommendation.this,Welcome_TravelWise.class);
+
+                Intent intent = new Intent(Modify_city.this, Welcome_TravelWise.class);
                 startActivity(intent);
             }
         });
