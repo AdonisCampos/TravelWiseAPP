@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/fondodos"
+    tools:context=".Check_In_Activity">
+
+    /
+
+    <TextView
+        android:id="@+id/lbltitle"
+        android:layout_width="391dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:text="SELECCIONA OTRO PAIS SI QUIERES VER SUS REQUISITOS"
+        android:textAlignment="center"
+        android:textColor="#020F5A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgLogoCiudad" />
+
+    <ImageView
+        android:id="@+id/ImgLogoCiudad"
+        android:layout_width="331dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/requisito" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="346dp"
+        android:layout_height="462dp"
+        android:background="@drawable/borde"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgLogoCiudad"
+        app:layout_constraintVertical_bias="0.503">
+
+
+        <Spinner
+            android:id="@+id/spinnerPaises"
+            android:layout_width="310dp"
+            android:layout_height="63dp"
+            android:entries="@array/paises" />
+
+
+        <TextView
+            android:id="@+id/txtRequisitos"
+            android:layout_width="311dp"
+            android:layout_height="154dp"
+            android:text="Requisitos de entrada al país "
+            android:textColor="#020F5A"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSpinner"
+            android:layout_width="314dp"
+            android:layout_height="123dp">
+
+            <Button
+                android:id="@+id/btnRegistro"
+                android:layout_width="304dp"
+                android:layout_height="82dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#05095C"
+                android:backgroundTintMode="add"
+                android:text="CONTINUAR"
+                android:textAlignment="center"
+                android:textColor="#F8F6F6"
+                android:textColorHighlight="#400303"
+                android:textColorHint="#770707"
+                android:textColorLink="#550909" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnPri"
+        android:layout_width="75dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/btnAnt"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/btnAnt"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

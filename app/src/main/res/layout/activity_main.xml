@@ -26,16 +26,15 @@
 
     <ImageView
         android:id="@+id/ImgLogo"
-        android:layout_width="482dp"
-        android:layout_height="165dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="62dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="28dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.971"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtUsuarioLayout"
@@ -91,21 +90,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtContraseña" />
 
-    <Button
-        android:id="@+id/btnRegistrar"
-        android:layout_width="259dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#05095C"
-        android:backgroundTintMode="add"
-        android:text="CREAR UNA CUENTA"
+
+    <TextView
+        android:id="@+id/lblIniciarSesion"
+        android:layout_width="194dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:text="CREAR CUENTA"
         android:textAlignment="center"
-        android:textColor="#F8F6F6"
-        android:textColorHighlight="#400303"
-        android:textColorHint="#770707"
-        android:textColorLink="#550909"
+        android:textColor="#FA02D9"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblNoRegistrado" />
 
@@ -113,12 +111,13 @@
         android:id="@+id/lblNoRegistrado"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="No tienes una cuenta?"
+        android:layout_marginTop="12dp"
+        android:text="NO TIENES UNA CUENTA?"
         android:textAlignment="center"
         android:textColor="#1F0253"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSesion" />
 

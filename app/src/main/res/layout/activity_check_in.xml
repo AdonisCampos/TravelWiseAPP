@@ -8,20 +8,32 @@
     android:background="@drawable/fondo"
     tools:context=".Check_In_Activity">
 
-    <Button
-        android:id="@+id/btnRegistrado"
-        android:layout_width="204dp"
-        android:layout_height="54dp"
-        android:backgroundTint="#05095C"
-        android:backgroundTintMode="add"
-        android:text="INICIAR SESION"
-        android:textAlignment="center"
-        android:textColor="#F8F6F6"
-        android:textColorHighlight="#400303"
-        android:textColorHint="#770707"
-        android:textColorLink="#550909"
+    <TextView
+        android:id="@+id/lblRegistrarse"
+        android:layout_width="181dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="68dp"
+        android:text="REGISTRATE"
+        android:textAlignment="gravity"
+        android:textColor="#FA02D9"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblIniciarSesion"
+        android:layout_width="245dp"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:text=" INICIAR SESIÓN  "
+        android:textAlignment="center"
+        android:textColor="#FA02D9"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblRegistardo" />
 
@@ -29,13 +41,14 @@
         android:id="@+id/lblRegistardo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Ya tienes una cuenta? "
+        android:text="YA TIENES UNA CUENTA?"
         android:textAlignment="center"
         android:textColor="#1F0253"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarse" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
 
     <EditText
         android:id="@+id/txtCorreo"
@@ -113,10 +126,10 @@
         android:textColorLink="#03115E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ImgLogo2" />
+        app:layout_constraintTop_toBottomOf="@+id/ImgLogoCiudad" />
 
     <Button
-        android:id="@+id/btnRegistrarse"
+        android:id="@+id/btnRegistro"
         android:layout_width="204dp"
         android:layout_height="54dp"
         android:backgroundTint="#05095C"
@@ -133,9 +146,9 @@
         app:layout_constraintTop_toBottomOf="@+id/txtContraseñaRegistroConfirmar" />
 
     <ImageView
-        android:id="@+id/ImgLogo2"
-        android:layout_width="388dp"
-        android:layout_height="165dp"
+        android:id="@+id/ImgLogoCiudad"
+        android:layout_width="360dp"
+        android:layout_height="152dp"
         android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
@@ -145,8 +158,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="277dp"
-        android:layout_height="388dp"
+        android:layout_width="303dp"
+        android:layout_height="479dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/borde"
         android:orientation="vertical"
@@ -154,7 +167,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483">
         <!-- Contenido del LinearLayout -->
     </LinearLayout>
 
@@ -162,12 +176,11 @@
         android:id="@+id/ImgRegistro"
         android:layout_width="175dp"
         android:layout_height="136dp"
-        android:layout_marginTop="56dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegistrado"
+        app:layout_constraintTop_toBottomOf="@+id/lblIniciarSesion"
         app:srcCompat="@drawable/registro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

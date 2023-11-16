@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="paises">
+        <item>El Salvador</item>
+        <item>Guatemala</item>
+        <item>Honduras</item>
+        <item>Nicaragua</item>
+        <item>Costa Rica</item>
+        <item>Panamá</item>
+    </array>
+
+    <array name="Cities">
+        <item>Ahuachapán</item>
+        <item>Sensuntepeque</item>
+        <item>Chalatenango</item>
+        <item>Cojutepeque</item>
+        <item>Santa Tecla</item>
+        <item>Zacatecoluca</item>
+        <item>La Unión</item>
+        <item>San Francisco Gotera</item>
+        <item>San Miguel</item>
+        <item>San Salvador</item>
+        <item>San Vicente</item>
+        <item>Santa Ana</item>
+        <item>Sonsonate</item>
+        <item>Usulután</item>
+    </array>
+
+</resources>

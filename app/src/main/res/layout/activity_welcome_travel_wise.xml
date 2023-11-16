@@ -4,56 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondotres"
     android:padding="10dp"
-    android:background="@drawable/fondo"
     tools:context=".Welcome_TravelWise">
 
-    <ImageView
-        android:id="@+id/imgLogo3"
-        android:layout_width="537dp"
-        android:layout_height="240dp"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ImgBienvenido"
-        app:srcCompat="@drawable/logo" />
+
+    <!-- Agregamos un RelativeLayout para el botón con icono y texto -->
 
     <TextView
         android:id="@+id/lblBienvenido"
-        android:layout_width="327dp"
-        android:layout_height="227dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="373dp"
+        android:layout_height="342dp"
+        android:layout_marginTop="164dp"
         android:text="¡Bienvenido a TravelWise! Tu compañero ideal para explorar Centroamérica con sabiduría. Descubre los requisitos de entrada, cotiza hoteles y mucho más. ¡Selecciona tu país y comienza tu aventura ahora mismo!"
         android:textAlignment="center"
         android:textColor="#35028E"
-        android:textSize="24sp"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo3" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/ImgBienvenido"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/bienvenido"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="-3dp" />
-
-    <Button
+    <RelativeLayout
         android:id="@+id/btnExplorar"
         android:layout_width="368dp"
         android:layout_height="61dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#1E0350"
-        android:text="¡PLANIFICA TU VIAJE!"
-        android:textColor="#FAF7F7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblBienvenido" />
+        app:layout_constraintTop_toBottomOf="@+id/lblBienvenido">
 
+
+        <ImageView
+            android:id="@+id/iconoExplorar"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/planificacion" />
+
+
+        <TextView
+            android:id="@+id/textoExplorar"
+            android:layout_width="245dp"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-42dp"
+            android:layout_marginTop="22dp"
+            android:layout_toEndOf="@+id/iconoExplorar"
+            android:text="¡PLANIFICA TU VIAJE!"
+            android:textColor="#35028E"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="368dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExplorar">
+
+
+        <ImageView
+            android:id="@+id/iconoCerrarSesion"
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/salida" />
+
+
+        <TextView
+            android:id="@+id/lblCerrarSesion"
+            android:layout_width="245dp"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-42dp"
+            android:layout_marginTop="22dp"
+            android:layout_toEndOf="@+id/iconoCerrarSesion"
+            android:text="CERRAR SESION"
+            android:textColor="#35028E"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

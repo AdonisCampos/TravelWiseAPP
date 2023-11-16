@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/fondodos"
+    tools:context=".Check_In_Activity">
+
+    <ImageView
+        android:id="@+id/ImgLogoCiudad"
+        android:layout_width="350dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ciudades" />
+    <TextView
+        android:id="@+id/lbltitle"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:text="SELECCIONAR CIUDAD"
+        android:textAlignment="center"
+        android:textColor="#020F5A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgLogoCiudad" />
+    /
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="358dp"
+        android:layout_height="482dp"
+        android:background="@drawable/borde"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgLogoCiudad"
+        app:layout_constraintVertical_bias="0.257">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSpinner"
+            android:layout_width="332dp"
+            android:layout_height="48dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayaoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="101dp">
+
+                <Spinner
+                    android:id="@+id/SpinnerCiudades"
+                    android:layout_width="324dp"
+                    android:layout_height="65dp"
+                    android:entries="@array/Cities" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddCity"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#05095C"
+            android:backgroundTintMode="add"
+            android:text="AÑADIR CIUDAD"
+            android:textAlignment="center"
+            android:textColor="#F8F6F6"
+            android:textColorHighlight="#400303"
+            android:textColorHint="#770707"
+            android:textColorLink="#550909" />
+
+        <TextView
+            android:id="@+id/lblTi"
+            android:layout_width="315dp"
+            android:layout_height="203dp"
+            android:text="Ahuachapán\nSensuntepeque\nChalatenango\nCojutepeque\nSanta Tecla\nZacatecoluca\nLa Unión\nSan Francisco Gotera\nSan Miguel\nSan Salvador\nSan Vicente\nSanta Ana\nSonsonate\nUsulután"
+            android:textColor="#020F5A"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#05095C"
+            android:backgroundTintMode="add"
+            android:text="CONTINUAR"
+            android:textAlignment="center"
+            android:textColor="#F8F6F6"
+            android:textColorHighlight="#400303"
+            android:textColorHint="#770707"
+            android:textColorLink="#550909" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnPri"
+        android:layout_width="105dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/btnAnt"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/btnAnt"
+        android:layout_width="73dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

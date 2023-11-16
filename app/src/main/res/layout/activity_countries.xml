@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondodos"
+    tools:context=".Countries_Activity">
+
+    <!-- activity_main.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SELECCIONA UN PAIS:"
+            android:textColor="#27016A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/paisesListView"
+            android:layout_width="match_parent"
+            android:layout_height="618dp"
+            android:layout_weight="1"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0.5dp">
+
+
+        </ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <ImageButton
+                android:id="@+id/imagemore"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/more" />
+
+            <ImageButton
+                android:id="@+id/backHome"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/back" />
+
+            <ImageButton
+                android:id="@+id/btnAnt"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/home" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
