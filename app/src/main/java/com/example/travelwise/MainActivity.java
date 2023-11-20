@@ -3,7 +3,9 @@ package com.example.travelwise;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editUser,editPassword;
     Button  IniciarSesion;
     TextView CrearCuenta;
+    String usuario,password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         CrearCuenta = findViewById(R.id.lblIniciarSesion);
         editUser = findViewById(R.id.txtUsuario);
         editPassword = findViewById(R.id.txtContraseña);
+        recuperarPreferencias();
 
         CrearCuenta.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +54,13 @@ public class MainActivity extends AppCompatActivity {
         IniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validarUsuario("http://192.168.1.2/travelwise/validar_usuario.php");
+                usuario = editUser.getText().toString();
+                password = editPassword.getText().toString();
+                if (!usuario.isEmpty() && !password.isEmpty()){
+                    validarUsuario("http://192.168.1.2/travelwise/validar_usuario.php");
+                }else {
+                    Toast.makeText(MainActivity.this, "Rellene los campos", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -64,9 +74,11 @@ public class MainActivity extends AppCompatActivity {
               Log.d("Response", "Response: " + response); // Imprime la respuesta del servidor en el logcat
 
               if (response != null && !response.isEmpty() && !response.trim().equals("{\"message\":\"No se encontraron resultados\"}")) {
+                  guardarPreferencias();
                   Toast.makeText(MainActivity.this, "Sesion iniciada", Toast.LENGTH_SHORT).show();
                   Intent intent = new Intent(getApplicationContext(), Welcome_TravelWise.class);
                   startActivity(intent);
+                  finish();
               } else {
                   Toast.makeText(MainActivity.this, "Parametros incorrectos", Toast.LENGTH_SHORT).show();
               }
@@ -83,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
           @Override
           protected Map<String, String> getParams() throws AuthFailureError {
               Map<String, String> parametros = new HashMap<String, String>();
-              parametros.put("usuario", editUser.getText().toString());
-              parametros.put("password", editPassword.getText().toString());
+              parametros.put("usuario", usuario);
+              parametros.put("password", password);
               return parametros;
 
           }
@@ -92,4 +104,40 @@ public class MainActivity extends AppCompatActivity {
       RequestQueue requestQueue = Volley.newRequestQueue(this);
       requestQueue.add(stringRequest);
     }
+    private void guardarPreferencias(){
+        SharedPreferences preferences = getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("usuario",usuario);
+        editor.putString("password",password);
+        editor.putBoolean("sesion",true);
+        editor.commit();
+    }
+    private void recuperarPreferencias(){
+        SharedPreferences preferences=getSharedPreferences("preferenciasLogin",Context.MODE_PRIVATE);
+        editUser.setText(preferences.getString("usuario","admin"));
+        editPassword.setText(preferences.getString("password", "123"));
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
