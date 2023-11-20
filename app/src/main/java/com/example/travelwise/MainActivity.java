@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
               Log.d("Response", "Response: " + response); // Imprime la respuesta del servidor en el logcat
 
               if (response != null && !response.isEmpty() && !response.trim().equals("{\"message\":\"No se encontraron resultados\"}")) {
-                  Toast.makeText(MainActivity.this, response.toString(), Toast.LENGTH_SHORT).show();
+                  Toast.makeText(MainActivity.this, "Sesion iniciada", Toast.LENGTH_SHORT).show();
                   Intent intent = new Intent(getApplicationContext(), Welcome_TravelWise.class);
                   startActivity(intent);
               } else {
