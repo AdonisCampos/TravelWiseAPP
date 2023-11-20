@@ -88,7 +88,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtContraseña" />
+        app:layout_constraintTop_toBottomOf="@+id/txtContraseñaLayout" />
 
 
     <TextView
@@ -122,7 +122,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnSesion" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtContraseña"
+        android:id="@+id/txtContraseñaLayout"
         android:layout_width="287dp"
         android:layout_height="87dp"
         android:layout_marginTop="8dp"
@@ -147,7 +147,7 @@
         app:suffixTextColor="#17013E">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtContraseñaLayout"
+            android:id="@+id/txtContraseña"
             android:layout_width="262dp"
             android:layout_height="76dp"
             android:drawableStart="@drawable/baseline_lock_24"
