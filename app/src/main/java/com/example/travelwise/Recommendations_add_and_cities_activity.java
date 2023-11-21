@@ -9,17 +9,28 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class Recommendations_add_and_cities_activity extends AppCompatActivity {
     ListView listViewCiudades;
     ListView listViewRecomendaciones;
 
-    String[] ciudades = {"Ciudad 1", "Ciudad 2", "Ciudad 3"};  // Reemplaza con tus datos reales
-    String[] recomendaciones = {"Recomendación 1", "Recomendación 2", "Recomendación 3"};  // Reemplaza con tus datos reales
+    String[] ciudades = {"Ciudad 1", "Ciudad 2", "Ciudad 3"};
+    String[] recomendaciones = {"Recomendación 1", "Recomendación 2", "Recomendación 3"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recommendations_add_and_cities);
+
+        setContentView(R.layout.activity_recommendations_add_and_cities);
+
+
+        Intent intent = getIntent();
+        String selectedCountry = intent.getStringExtra("PAIS_SELECCIONADO");
+
+
+        TextView txtSelectedCountry = findViewById(R.id.txtSelectedCountry);
+        txtSelectedCountry.setText("Pais Seleccionado: " + selectedCountry);
 
         listViewCiudades = findViewById(R.id.listViewCiudad);
         listViewRecomendaciones = findViewById(R.id.listViewRecomendar);

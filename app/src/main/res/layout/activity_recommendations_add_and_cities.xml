@@ -8,6 +8,18 @@
     android:background="@drawable/fondodos"
     tools:context=".Recommendations_add_and_cities_activity">
 
+    <TextView
+        android:id="@+id/txtSelectedCountry"
+        android:layout_width="265dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="#020F5A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/lblAddCity"
@@ -50,17 +62,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
 
+
     <ImageView
         android:id="@+id/ImgEditarRecomendar"
-        android:layout_width="345dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="323dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintHorizontal_bias="0.659"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/editar" />
-
 
     <ImageButton
         android:id="@+id/btnPrinCity"
