@@ -9,36 +9,23 @@
     tools:context=".Recommendations_add_and_cities_activity">
 
     <TextView
-        android:id="@+id/txtSelectedCountry"
-        android:layout_width="265dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="20dp"
-        android:text=""
-        android:textColor="#020F5A"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.773"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/lblAddCity"
-        android:layout_width="395dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="394dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="12dp"
         android:text="MODIFICAR CIUDAD Y RECOMENDACIONES"
         android:textAlignment="center"
         android:textColor="#020F5A"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ImgEditarRecomendar" />
 
     <TextView
         android:id="@+id/lblAddCity2"
-        android:layout_width="392dp"
-        android:layout_height="50dp"
+        android:layout_width="385dp"
+        android:layout_height="29dp"
         android:layout_marginTop="4dp"
         android:text="CIUDADES"
         android:textAlignment="center"
@@ -67,19 +54,17 @@
         android:id="@+id/ImgEditarRecomendar"
         android:layout_width="323dp"
         android:layout_height="57dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.659"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/editar" />
 
     <ImageButton
         android:id="@+id/btnPrinCity"
-        android:layout_width="105dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="81dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="76dp"
         android:background="@android:color/transparent"
         app:layout_constraintStart_toEndOf="@+id/btnAnteCity"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout1"
@@ -87,10 +72,9 @@
 
     <ImageButton
         android:id="@+id/btnAnteCity"
-        android:layout_width="73dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
         android:background="@android:color/transparent"
 
         app:layout_constraintStart_toStartOf="parent"
@@ -99,19 +83,20 @@
 
     <GridLayout
         android:id="@+id/gridLayout1"
-        android:layout_width="363dp"
-        android:layout_height="176dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/borde"
         android:columnCount="2"
         android:orientation="horizontal"
         android:padding="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/lblAddCity3"
-        tools:layout_editor_absoluteX="22dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAddCity3">
 
         <ListView
             android:id="@+id/listViewRecomendar"
-            android:layout_width="323dp"
-            android:layout_height="98dp"
+            android:layout_width="349dp"
+            android:layout_height="150dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
@@ -123,20 +108,24 @@
 
     <GridLayout
         android:id="@+id/gridLayout2"
-        android:layout_width="363dp"
-        android:layout_height="157dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:background="@drawable/borde"
         android:columnCount="2"
         android:orientation="horizontal"
         android:padding="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/lblAddCity2"
-        tools:layout_editor_absoluteX="19dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAddCity2">
 
 
         <ListView
             android:id="@+id/listViewCiudad"
-            android:layout_width="321dp"
-            android:layout_height="91dp"
+            android:layout_width="346dp"
+            android:layout_height="199dp"
+            android:layout_row="0"
+            android:layout_column="0"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
@@ -147,7 +136,7 @@
         <LinearLayout
             android:id="@+id/parentLinearLayout"
             android:layout_width="347dp"
-            android:layout_height="112dp"
+            android:layout_height="206dp"
             android:layout_row="0"
             android:layout_column="0"
             android:orientation="vertical">

@@ -60,8 +60,7 @@
                 <Spinner
                     android:id="@+id/SpinnerCiudades"
                     android:layout_width="324dp"
-                    android:layout_height="65dp"
-                    android:entries="@array/Cities" />
+                    android:layout_height="65dp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -79,13 +78,10 @@
             android:textColorHint="#770707"
             android:textColorLink="#550909" />
 
-        <TextView
-            android:id="@+id/lblTi"
-            android:layout_width="315dp"
-            android:layout_height="203dp"
-            android:text="Ahuachapán\nSensuntepeque\nChalatenango\nCojutepeque\nSanta Tecla\nZacatecoluca\nLa Unión\nSan Francisco Gotera\nSan Miguel\nSan Salvador\nSan Vicente\nSanta Ana\nSonsonate\nUsulután"
-            android:textColor="#020F5A"
-            android:textSize="15sp" />
+        <ListView
+            android:id="@+id/ListviewCiudades"
+            android:layout_width="match_parent"
+            android:layout_height="244dp" />
 
 
         <Button

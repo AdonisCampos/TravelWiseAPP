@@ -62,7 +62,7 @@
             android:textColorLink="#550909" />
 
         <TextView
-            android:id="@+id/lblTi"
+            android:id="@+id/lblTitulo"
             android:layout_width="323dp"
             android:layout_height="293dp"
             android:text="Recomendacion 1\nRecomendacion 2\nRecomendacion 3\nRecomendacion 4\nRecomendacion 5\nRecomendacion 6\nRecomendacion 7\nRecomendacion 8\nRecomendacion 9\nRecomendacion 10\nRecomendacion 11\nRecomendacion 12\nRecomendacion 13\nRecomendacion 14"
@@ -71,7 +71,7 @@
 
 
         <Button
-            android:id="@+id/btnFinalizarCiudad"
+            android:id="@+id/btnFinalizarDestino"
             android:layout_width="313dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

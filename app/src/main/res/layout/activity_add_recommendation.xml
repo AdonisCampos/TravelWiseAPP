@@ -52,45 +52,43 @@
 
 
         <TextView
-            android:id="@+id/lblTi"
+            android:id="@+id/lblTitulo"
             android:layout_width="311dp"
-            android:layout_height="47dp"
-            android:text="TITULO"
+            android:layout_height="wrap_content"
+            android:text="Titulo del itinerario"
             android:textAlignment="center"
             android:textColor="#020F5A"
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/txtTitleCiudad"
+            android:id="@+id/txtTituloDestino"
             android:layout_width="315dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="INGRESE EL TITULO "
+            android:hint="My trip 2023"
             android:inputType="text"
             android:textColorHint="#030F57" />
 
         <TextView
             android:id="@+id/lblDescripcionCiudad"
             android:layout_width="311dp"
-            android:layout_height="47dp"
-            android:text="DESCRIPCION"
+            android:layout_height="wrap_content"
+            android:text="Anotaciones"
             android:textAlignment="center"
             android:textColor="#020F5A"
             android:textSize="15sp" />
 
         <EditText
             android:id="@+id/txtDescripcionCiudad"
-            android:layout_width="310dp"
-            android:layout_height="59dp"
-            android:layout_marginTop="32dp"
-            android:defaultFocusHighlightEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
             android:ems="10"
-            android:hint="INGRESE LA DESCRIPCION"
-            android:inputType="text"
-            android:textColorHint="#030F57" />
+            android:gravity="start|top"
+            android:hint="Visitar el Museo \n Ir al restaurante famoso \n Encontrar las ruinas de la ciudad"
+            android:inputType="textMultiLine" />
 
         <Button
-            android:id="@+id/btnFinalizarCiudad"
+            android:id="@+id/btnFinalizarDestino"
             android:layout_width="313dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

@@ -50,7 +50,7 @@
 
 
         <TextView
-            android:id="@+id/lblTi"
+            android:id="@+id/lblTitulo"
             android:layout_width="311dp"
             android:layout_height="47dp"
             android:text="TITULO"
@@ -59,7 +59,7 @@
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/txtTitleCiudad"
+            android:id="@+id/txtTituloDestino"
             android:layout_width="315dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -88,7 +88,7 @@
             android:textColorHint="#030F57" />
 
         <Button
-            android:id="@+id/btnFinalizarCiudad"
+            android:id="@+id/btnFinalizarDestino"
             android:layout_width="301dp"
             android:layout_height="59dp"
             android:layout_marginTop="20dp"

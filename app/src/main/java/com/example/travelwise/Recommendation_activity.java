@@ -4,9 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class Recommendation_activity extends AppCompatActivity {
 
@@ -22,8 +26,7 @@ public class Recommendation_activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Recommendation_activity.this, City_Activity.class);
-                startActivity(intent);
+                finish();
             }
         });
         imageb2.setOnClickListener(new View.OnClickListener() {
@@ -41,5 +44,13 @@ public class Recommendation_activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Intent intent = getIntent();
+        if (intent != null && intent.hasExtra("selected_country_id") && intent.hasExtra("selected_cities_list")) {
+            int selectedCountryID = intent.getIntExtra("selected_country_id", -1);
+            ArrayList<String> selectedCitiesList = intent.getStringArrayListExtra("selected_cities_list");
+
+        }
+
     }
 }

@@ -47,7 +47,7 @@ public class Check_In_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Check_In_Activity.this, MainActivity.class);
+                Intent intent = new Intent(Check_In_Activity.this, Countries_Activity.class);
                 startActivity(intent);
             }
         });
