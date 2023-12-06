@@ -6,23 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="@drawable/fondodos"
+    android:background="@drawable/actividafondo"
     tools:context=".Check_In_Activity">
+
+    /
 
     <ImageView
         android:id="@+id/ImgEditarRecomendar"
-        android:layout_width="350dp"
-        android:layout_height="113dp"
+        android:layout_width="277dp"
+        android:layout_height="88dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.737"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ciudades" />
+
     <TextView
         android:id="@+id/lbltitleEditar"
-        android:layout_width="0dp"
-        android:layout_height="21dp"
+        android:layout_width="343dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
         android:text="SELECCIONAR CIUDAD"
         android:textAlignment="center"
         android:textColor="#020F5A"
@@ -30,21 +33,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ImgEditarRecomendar" />
-    /
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="358dp"
-        android:layout_height="482dp"
+        android:layout_width="361dp"
+        android:layout_height="470dp"
         android:background="@drawable/borde"
         android:orientation="vertical"
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ImgEditarRecomendar"
-        app:layout_constraintVertical_bias="0.257">
+        app:layout_constraintVertical_bias="0.458">
 
 
         <LinearLayout
@@ -103,10 +105,10 @@
 
     <ImageButton
         android:id="@+id/btnPrinCity"
-        android:layout_width="105dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
         android:background="@android:color/transparent"
         app:layout_constraintStart_toEndOf="@+id/btnAnteCity"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -114,10 +116,10 @@
 
     <ImageButton
         android:id="@+id/btnAnteCity"
-        android:layout_width="73dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="32dp"
         android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"

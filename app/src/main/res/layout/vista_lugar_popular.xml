@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvPersonaje"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/CELE"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="15dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="375dp"
+        android:layout_height="227dp">
+
+        <ImageView
+            android:id="@+id/imvImagen"
+            android:layout_width="167dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="170dp"
+            android:layout_height="119dp"
+            android:layout_below="@+id/imvImagen"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="-106dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/imvImagen"
+            android:text="TextView"
+            android:textAlignment="gravity"
+            android:textColor="#FCFDFD"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtDescripcion"
+            android:layout_width="294dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/imvImagen"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="TextView"
+            android:textAlignment="gravity"
+            android:textColor="#FAFAFB"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

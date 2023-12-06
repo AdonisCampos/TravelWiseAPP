@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:padding="10dp"
-    android:background="@drawable/fondodos"
+    android:background="@drawable/actividafondo"
     android:layout_height="match_parent"
     tools:context=".Activity_Modify_Recommendation">
 
@@ -14,9 +14,9 @@
         android:id="@+id/ImgEditarRec"
         android:layout_width="350dp"
         android:layout_height="113dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/editarrecomendar" />
@@ -37,8 +37,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="366dp"
-        android:layout_height="356dp"
+        android:layout_width="361dp"
+        android:layout_height="343dp"
         android:background="@drawable/borde"
         android:orientation="vertical"
         android:padding="20dp"
@@ -64,7 +64,7 @@
                     android:id="@+id/SpinnerEditarRecomendar"
                     android:layout_width="324dp"
                     android:layout_height="65dp"
-                    android:entries="@array/recomendar"/>
+                    android:entries="@array/recomendar" />
             </LinearLayout>
         </LinearLayout>
 
@@ -89,21 +89,22 @@
         android:id="@+id/imageButtonRetornar"
         android:layout_width="97dp"
         android:layout_height="45dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
         android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@drawable/back" />
 
     <ImageButton
         android:id="@+id/imageButtonPrincipal"
         android:layout_width="87dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="36dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageButtonRetornar"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@drawable/home" />

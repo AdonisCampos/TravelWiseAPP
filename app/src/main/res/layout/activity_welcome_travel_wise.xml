@@ -4,33 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondotres"
+    android:background="@drawable/bienvenido3"
     android:padding="10dp"
     tools:context=".Welcome_TravelWise">
 
-
-    <!-- Agregamos un RelativeLayout para el botón con icono y texto -->
-
     <TextView
         android:id="@+id/lblBienvenido"
-        android:layout_width="373dp"
-        android:layout_height="342dp"
-        android:layout_marginTop="164dp"
+        android:layout_width="303dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="196dp"
         android:text="¡Bienvenido a TravelWise! Tu compañero ideal para explorar Centroamérica con sabiduría. Descubre los requisitos de entrada, cotiza hoteles y mucho más. ¡Selecciona tu país y comienza tu aventura ahora mismo!"
         android:textAlignment="center"
         android:textColor="#35028E"
-        android:textSize="35sp"
+        android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
         android:id="@+id/btnExplorar"
-        android:layout_width="368dp"
-        android:layout_height="61dp"
+        android:layout_width="317dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblBienvenido">
 
@@ -39,18 +37,16 @@
             android:id="@+id/iconoExplorar"
             android:layout_width="153dp"
             android:layout_height="match_parent"
-            android:layout_centerVertical="true"
             android:layout_marginEnd="8dp"
             android:src="@drawable/planificacion" />
 
-
         <TextView
             android:id="@+id/textoExplorar"
-            android:layout_width="245dp"
-            android:layout_height="46dp"
+            android:layout_width="198dp"
+            android:layout_height="47dp"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="-42dp"
-            android:layout_marginTop="22dp"
+            android:layout_marginStart="-35dp"
+            android:layout_marginTop="33dp"
             android:layout_toEndOf="@+id/iconoExplorar"
             android:text="¡PLANIFICA TU VIAJE!"
             android:textColor="#35028E"
@@ -59,32 +55,62 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/btnCerrarSesion"
-        android:layout_width="368dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/btnEditarPerfil"
+        android:layout_width="336dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnExplorar">
+
+
+        <ImageView
+            android:id="@+id/iconoProfile"
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/useredit" />
+
+        <TextView
+            android:id="@+id/lblEditProfile"
+            android:layout_width="194dp"
+            android:layout_height="51dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-52dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/iconoProfile"
+            android:text="EDITAR MI PERFIL"
+            android:textColor="#35028E"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="335dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditarPerfil">
 
 
         <ImageView
             android:id="@+id/iconoCerrarSesion"
             android:layout_width="153dp"
             android:layout_height="match_parent"
-            android:layout_centerVertical="true"
             android:layout_marginEnd="8dp"
             android:src="@drawable/salida" />
 
-
         <TextView
             android:id="@+id/lblCerrarSesion"
-            android:layout_width="245dp"
-            android:layout_height="46dp"
+            android:layout_width="216dp"
+            android:layout_height="53dp"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="-42dp"
-            android:layout_marginTop="22dp"
+            android:layout_marginStart="-34dp"
+            android:layout_marginTop="15dp"
             android:layout_toEndOf="@+id/iconoCerrarSesion"
             android:text="CERRAR SESION"
             android:textColor="#35028E"
@@ -92,4 +118,90 @@
 
     </RelativeLayout>
 
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/CELE"
+            app:fabCradleMargin="8dp"
+            app:fabCradleRoundedCornerRadius="50dp"
+            app:fabCradleVerticalOffset="6dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/acercade"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        app:srcCompat="@drawable/acercade" />
+
+                    <TextView
+                        android:id="@+id/txtacercade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ACERCA DE "
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical"
+                    tools:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/LugaresPopulares"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        app:srcCompat="@drawable/popular" />
+
+                    <TextView
+                        android:id="@+id/Popular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LUGARES POPULARES"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            app:backgroundTint="@color/black"
+            app:layout_anchor="@id/app_bar"
+            app:maxImageSize="30dp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

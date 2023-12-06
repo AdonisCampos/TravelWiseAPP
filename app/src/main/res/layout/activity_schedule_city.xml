@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="@drawable/fondodos"
+    android:background="@drawable/finalfondo"
     tools:context=".Schedule_city_activity">
 
 
@@ -13,7 +13,7 @@
         android:id="@+id/lblAddCity"
         android:layout_width="392dp"
         android:layout_height="50dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="4dp"
         android:text="AÑADIR  CIUDADES"
         android:textAlignment="center"
         android:textColor="#020F5A"
@@ -27,17 +27,17 @@
         android:id="@+id/ImgEditarRecomendar"
         android:layout_width="350dp"
         android:layout_height="113dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/edificiodeoficinas" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="357dp"
-        android:layout_height="447dp"
+        android:layout_width="339dp"
+        android:layout_height="413dp"
         android:background="@drawable/borde"
         android:orientation="vertical"
         android:padding="20dp"
@@ -106,10 +106,10 @@
 
     <ImageButton
         android:id="@+id/btnPrinCity"
-        android:layout_width="105dp"
+        android:layout_width="64dp"
         android:layout_height="61dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
         android:background="@android:color/transparent"
         app:layout_constraintStart_toEndOf="@+id/btnAnteCity"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -119,8 +119,8 @@
         android:id="@+id/btnAnteCity"
         android:layout_width="73dp"
         android:layout_height="64dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="48dp"
         android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"

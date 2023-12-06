@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 usuario = editUser.getText().toString();
                 password = editPassword.getText().toString();
                 if (!usuario.isEmpty() && !password.isEmpty()){
-                    validarUsuario("http://192.168.1.2/travelwise/validar_usuario.php");
+                    validarUsuario("http://192.168.0.13/travelwise/validar_usuario.php");
                 }else {
                     Toast.makeText(MainActivity.this, "Rellene los campos", Toast.LENGTH_SHORT).show();
                 }

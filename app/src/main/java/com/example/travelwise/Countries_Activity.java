@@ -80,7 +80,7 @@ public class Countries_Activity extends AppCompatActivity {
     }
 
     private void obtenerDatosDestinos(String nombreUsuario) {
-        String URLdestinos = "http://192.168.1.2/travelwise/destinos_listview.php";
+        String URLdestinos = "http://192.168.0.13/travelwise/destinos_listview.php";
         String URL = URLdestinos + "?nombre_usuario=" + nombreUsuario;
         StringRequest stringRequest = new StringRequest(Request.Method.GET, URL, new Response.Listener<String>() {
 

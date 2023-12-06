@@ -38,7 +38,7 @@ public class Activity_Destination_Record extends AppCompatActivity {
         ImageButton imageHome = findViewById(R.id.btnPrinCity);
         Button btnContinuar = findViewById(R.id.btnRegistro);
 
-        String URL_Paises = "http://192.168.1.2/travelwise/paises_listview.php"; // Reemplaza con tu URL correcta
+        String URL_Paises = "http://192.168.0.13/travelwise/paises_listview.php"; // Reemplaza con tu URL correcta
 
 
         StringRequest stringRequestPaises = new StringRequest(Request.Method.POST, URL_Paises, new Response.Listener<String>() {

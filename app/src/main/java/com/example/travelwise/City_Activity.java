@@ -122,7 +122,7 @@ public class City_Activity extends AppCompatActivity {
     }
 
     private void obtenerDatosCiudades(Integer selectedCountryID) {
-        String URL = "http://192.168.1.2/travelwise/ciudad_listview.php";
+        String URL = "http://192.168.0.13/travelwise/ciudad_listview.php";
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override

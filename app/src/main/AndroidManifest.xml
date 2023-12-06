@@ -17,6 +17,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Activity_Popular_Places"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_About"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Profile_Edit"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity

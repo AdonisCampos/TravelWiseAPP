@@ -8,13 +8,24 @@
     android:padding="10dp"
     tools:context=".Check_In_Activity">
 
+    <ImageButton
+        android:id="@+id/btnP"
+        android:layout_width="124dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="132dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContra"
+        app:srcCompat="@drawable/home" />
+
     <TextView
-        android:id="@+id/lblRegistrarse"
-        android:layout_width="188dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="132dp"
+        android:id="@+id/lblPerfil"
+        android:layout_width="162dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="124dp"
         android:fontFamily="sans-serif-medium"
-        android:text="REGISTRATE"
+        android:text="EDITA TU PERFIL"
         android:textAlignment="center"
         android:textColor="#FA02D9"
         android:textSize="30sp"
@@ -23,36 +34,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/lblIniciarSesion"
-        android:layout_width="252dp"
-        android:layout_height="56dp"
-        android:clickable="true"
-        android:text=" INICIAR SESIÓN  "
-        android:textAlignment="center"
-        android:textColor="#FA02D9"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblRegistardo" />
-
-    <TextView
-        android:id="@+id/lblRegistardo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="¿YA TIENES UNA CUENTA?"
-        android:textAlignment="center"
-        android:textColor="#1F0253"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
-
     <EditText
-        android:id="@+id/txtCorreo"
+        android:id="@+id/txtUsuarioEdit"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="323dp"
         android:layout_height="56dp"
@@ -61,6 +44,28 @@
         android:drawableStart="@drawable/custom_estilo_email"
         android:drawablePadding="20dp"
         android:drawingCacheQuality="auto"
+        android:ems="10"
+        android:hint="USUARIO"
+        android:inputType="text"
+        android:textAlignment="inherit"
+        android:textColor="#0B0A0A"
+        android:textColorHighlight="#051361"
+        android:textColorHint="#05134A"
+        android:textColorLink="#03115E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreEdit" />
+
+
+    <EditText
+        android:id="@+id/txtCorreoEdit"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="323dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_cajastexto"
+        android:drawableStart="@drawable/custom_estilo_contra"
+        android:drawablePadding="20dp"
         android:ems="10"
         android:hint="EMAIL"
         android:inputType="text"
@@ -71,17 +76,75 @@
         android:textColorLink="#03115E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioRegistrar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioEdit" />
 
     <EditText
-        android:id="@+id/txtContraseñaRegistro"
+        android:id="@+id/txtNombreEdit"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="323dp"
         android:layout_height="56dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custom_cajastexto"
+        android:drawableStart="@drawable/custom_estilo_icono"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="NOMBRE"
+        android:inputType="text"
+        android:textAlignment="inherit"
+        android:textColor="#040303"
+        android:textColorHighlight="#030353"
+        android:textColorHint="#051E67"
+        android:textColorLink="#03115E"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPerfil" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="140dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#05095C"
+        android:backgroundTintMode="add"
+        android:text="Editar"
+        android:textAlignment="center"
+        android:textColor="#F8F6F6"
+        android:textColorHighlight="#400303"
+        android:textColorHint="#770707"
+        android:textColorLink="#550909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContra" />
+
+    <Button
+        android:id="@+id/btnKeep"
+        android:layout_width="122dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#05095C"
+        android:backgroundTintMode="add"
+        android:text="Guardar datos"
+        android:textAlignment="center"
+        android:textColor="#F8F6F6"
+        android:textColorHighlight="#400303"
+        android:textColorHint="#770707"
+        android:textColorLink="#550909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toEndOf="@+id/btnEdit"
+        app:layout_constraintTop_toBottomOf="@+id/txtContra" />
+
+    <EditText
+        android:id="@+id/txtContra"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="323dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_cajastexto"
         android:drawableStart="@drawable/custom_estilo_contra"
-        android:drawablePadding="20dp"
+        android:drawablePadding="18dp"
         android:ems="10"
         android:hint="CONTRASEÑA"
         android:inputType="text"
@@ -92,69 +155,7 @@
         android:textColorLink="#03115E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
-
-
-    <EditText
-        android:id="@+id/txtUsuarioRegistrar"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="323dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="112dp"
-        android:background="@drawable/custom_cajastexto"
-        android:drawableStart="@drawable/custom_estilo_icono"
-        android:drawablePadding="20dp"
-        android:ems="10"
-        android:hint="USUARIO"
-        android:inputType="text"
-        android:textAlignment="inherit"
-        android:textColor="#040303"
-        android:textColorHighlight="#030353"
-        android:textColorHint="#051E67"
-        android:textColorLink="#03115E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/lblRegistrarse" />
-
-    <Button
-        android:id="@+id/btnRegistro"
-        android:layout_width="145dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#05095C"
-        android:backgroundTintMode="add"
-        android:text="REGISTRARSE"
-        android:textAlignment="center"
-        android:textColor="#F8F6F6"
-        android:textColorHighlight="#400303"
-        android:textColorHint="#770707"
-        android:textColorLink="#550909"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtContraseñaRegistroConfirmar" />
-
-    <EditText
-        android:id="@+id/txtContraseñaRegistroConfirmar"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="323dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/custom_cajastexto"
-        android:drawableStart="@drawable/custom_estilo_contra"
-        android:drawablePadding="18dp"
-        android:ems="10"
-        android:hint="CONFIRMAR CONTRASEÑA"
-        android:inputType="text"
-        android:textAlignment="inherit"
-        android:textColor="#0B0A0A"
-        android:textColorHighlight="#051361"
-        android:textColorHint="#05134A"
-        android:textColorLink="#03115E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtContraseñaRegistro" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreoEdit" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

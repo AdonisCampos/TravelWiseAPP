@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="@drawable/fondodos"
+    android:background="@drawable/finalfondo"
     tools:context=".Add_recommendation">
 
     /
@@ -27,8 +27,8 @@
 
     <ImageView
         android:id="@+id/ImgEditarRecomendar"
-        android:layout_width="350dp"
-        android:layout_height="113dp"
+        android:layout_width="344dp"
+        android:layout_height="99dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.426"
