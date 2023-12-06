@@ -17,7 +17,8 @@
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtContra"
-        app:srcCompat="@drawable/home" />
+        app:srcCompat="@drawable/home"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/lblPerfil"
@@ -34,35 +35,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/txtUsuarioEdit"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="323dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/custom_cajastexto"
-        android:drawableStart="@drawable/custom_estilo_email"
-        android:drawablePadding="20dp"
-        android:drawingCacheQuality="auto"
-        android:ems="10"
-        android:hint="USUARIO"
-        android:inputType="text"
-        android:textAlignment="inherit"
-        android:textColor="#0B0A0A"
-        android:textColorHighlight="#051361"
-        android:textColorHint="#05134A"
-        android:textColorLink="#03115E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombreEdit" />
-
 
     <EditText
         android:id="@+id/txtCorreoEdit"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="323dp"
         android:layout_height="56dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/custom_cajastexto"
         android:drawableStart="@drawable/custom_estilo_contra"
         android:drawablePadding="20dp"
@@ -76,72 +55,14 @@
         android:textColorLink="#03115E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioEdit" />
-
-    <EditText
-        android:id="@+id/txtNombreEdit"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="323dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/custom_cajastexto"
-        android:drawableStart="@drawable/custom_estilo_icono"
-        android:drawablePadding="20dp"
-        android:ems="10"
-        android:hint="NOMBRE"
-        android:inputType="text"
-        android:textAlignment="inherit"
-        android:textColor="#040303"
-        android:textColorHighlight="#030353"
-        android:textColorHint="#051E67"
-        android:textColorLink="#03115E"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblPerfil" />
-
-    <Button
-        android:id="@+id/btnEdit"
-        android:layout_width="140dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="36dp"
-        android:backgroundTint="#05095C"
-        android:backgroundTintMode="add"
-        android:text="Editar"
-        android:textAlignment="center"
-        android:textColor="#F8F6F6"
-        android:textColorHighlight="#400303"
-        android:textColorHint="#770707"
-        android:textColorLink="#550909"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.162"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtContra" />
-
-    <Button
-        android:id="@+id/btnKeep"
-        android:layout_width="122dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="36dp"
-        android:backgroundTint="#05095C"
-        android:backgroundTintMode="add"
-        android:text="Guardar datos"
-        android:textAlignment="center"
-        android:textColor="#F8F6F6"
-        android:textColorHighlight="#400303"
-        android:textColorHint="#770707"
-        android:textColorLink="#550909"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
-        app:layout_constraintStart_toEndOf="@+id/btnEdit"
-        app:layout_constraintTop_toBottomOf="@+id/txtContra" />
 
     <EditText
         android:id="@+id/txtContra"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="323dp"
         android:layout_height="56dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/custom_cajastexto"
         android:drawableStart="@drawable/custom_estilo_contra"
         android:drawablePadding="18dp"
@@ -156,6 +77,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCorreoEdit" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#05095C"
+        android:text="Guardar Cambios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContra" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

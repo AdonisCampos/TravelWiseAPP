@@ -56,10 +56,10 @@ public class Recommendations_add_and_cities_activity extends AppCompatActivity {
 
 
         // URL para obtener datos de ciudades
-        String urlCiudades = "http://192.168.0.13/travelwise/destino_ciudad_listview.php";
+        String urlCiudades = "http://192.168.1.2/travelwise/destino_ciudad_listview.php";
 
         // URL para obtener datos de recomendaciones
-        String urlRecomendaciones = "http://192.168.0.13/travelwise/destino_recomendacion_listview.php";
+        String urlRecomendaciones = "http://192.168.1.2/travelwise/destino_recomendacion_listview.php";
 
         // Obtener datos de ciudades y cargar en el ListView
         obtenerDatosCiudades(urlCiudades, listViewCiudades, selectedIdDestino);

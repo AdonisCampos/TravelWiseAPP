@@ -61,7 +61,7 @@ public class Check_In_Activity extends AppCompatActivity {
 
                 if (verifyValues(user,email,password,passwordConfirm)){
 
-                    createUser(user,email,password, "http://192.168.0.13/travelwise/nuevo_usuario.php");
+                    createUser(user,email,password, "http://192.168.1.2/travelwise/nuevo_usuario.php");
                 }else {
                     Toast.makeText(Check_In_Activity.this, "Debes completar todos los campos, \n ademas de coincidir las contrasaeñas.", Toast.LENGTH_SHORT).show();
                 }
