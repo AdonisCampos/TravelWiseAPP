@@ -76,7 +76,7 @@ public class AdaptadorDestino extends ArrayAdapter<String> {
         // Asegúrate de manejar las respuestas y los errores apropiadamente
         // Aquí hay un ejemplo simplificado de cómo podrías hacerlo:
 
-        String URLeliminarDestino = "http://192.168.1.2/travelwise/eliminar_destino.php";
+        String URLeliminarDestino = "http://192.168.0.13/travelwise/eliminar_destino.php";
         // Puedes enviar el ID a tu PHP para eliminar el destino
         String URL = URLeliminarDestino + "?id_destino=" + idDestino;
 

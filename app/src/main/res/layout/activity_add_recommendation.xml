@@ -14,7 +14,7 @@
         android:id="@+id/lblAddCity"
         android:layout_width="392dp"
         android:layout_height="50dp"
-        android:text="AÑADIR RECOMENDACIONES"
+        android:text="AÑADIR DESCRIPCIÓN DEL VIAJE"
         android:textAlignment="center"
         android:textColor="#020F5A"
         android:textSize="20sp"

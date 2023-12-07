@@ -66,7 +66,7 @@ public class Countries_Activity extends AppCompatActivity {
         SharedPreferences preferences = getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
         String nombreUsuario = preferences.getString("usuario", "");
 
-        String URL = "http://192.168.1.2/travelwise/destinos_listview.php?nombre_usuario=" + nombreUsuario;
+        String URL = "http://192.168.0.13/travelwise/destinos_listview.php?nombre_usuario=" + nombreUsuario;
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, URL, null,
                 response -> {
                     try {

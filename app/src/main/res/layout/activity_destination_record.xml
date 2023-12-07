@@ -13,10 +13,10 @@
 
     <TextView
         android:id="@+id/lbltitleEditar"
-        android:layout_width="359dp"
-        android:layout_height="56dp"
+        android:layout_width="372dp"
+        android:layout_height="55dp"
         android:layout_marginTop="12dp"
-        android:text="SELECCIONA OTRO PAIS SI QUIERES VER SUS REQUISITOS"
+        android:text="SELECCIONA EL PAIS PARA CONTINUAR CON TU PROCESO DE PLANIFICACIÓN"
         android:textAlignment="center"
         android:textColor="#020F5A"
         android:textSize="20sp"
@@ -27,8 +27,8 @@
 
     <ImageView
         android:id="@+id/ImgEditarRecomendar"
-        android:layout_width="284dp"
-        android:layout_height="76dp"
+        android:layout_width="256dp"
+        android:layout_height="58dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -38,8 +38,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="348dp"
-        android:layout_height="432dp"
+        android:layout_width="336dp"
+        android:layout_height="491dp"
         android:background="@drawable/borde"
         android:orientation="vertical"
         android:padding="20dp"
@@ -62,42 +62,55 @@
             android:textColor="@color/black" />
 
 
+        <TextView
+            android:id="@+id/lbltitleRequisitos"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="SELECCIONA UN PAIS PARA VER SUS REQUISITOS DE ENTREDA"
+            android:textAlignment="center"
+            android:textColor="#020F5A"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/spinnerRequisitos"
+            android:layout_width="306dp"
+            android:layout_height="67dp"
+            android:entries="@array/paises"
+            android:foregroundTint="#3F51B5"
+            android:outlineAmbientShadowColor="@color/BLUE"
+            android:outlineSpotShadowColor="@color/azul"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/txtRequisitos"
-            android:layout_width="311dp"
-            android:layout_height="154dp"
-            android:text="Requisitos de entrada al país "
+            android:layout_width="286dp"
+            android:layout_height="187dp"
             android:textColor="#020F5A"
-            android:textSize="34sp" />
+            android:textSize="9.5sp" />
 
-        <LinearLayout
-            android:id="@+id/linearLayoutSpinner"
-            android:layout_width="314dp"
-            android:layout_height="123dp">
-
-            <Button
-                android:id="@+id/btnRegistro"
-                android:layout_width="304dp"
-                android:layout_height="82dp"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="#05095C"
-                android:backgroundTintMode="add"
-                android:text="CONTINUAR"
-                android:textAlignment="center"
-                android:textColor="#F8F6F6"
-                android:textColorHighlight="#400303"
-                android:textColorHint="#770707"
-                android:textColorLink="#550909" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#05095C"
+            android:backgroundTintMode="add"
+            android:text="CONTINUAR"
+            android:textAlignment="center"
+            android:textColor="#F8F6F6"
+            android:textColorHighlight="#400303"
+            android:textColorHint="#770707"
+            android:textColorLink="#550909" />
 
     </LinearLayout>
 
     <ImageButton
         android:id="@+id/btnPrinCity"
-        android:layout_width="41dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
         android:background="@android:color/transparent"
         app:layout_constraintStart_toEndOf="@+id/btnAnteCity"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -105,10 +118,10 @@
 
     <ImageButton
         android:id="@+id/btnAnteCity"
-        android:layout_width="108dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="107dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="24dp"
         android:background="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"

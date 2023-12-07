@@ -61,7 +61,7 @@ public class Activity_Profile_Edit extends AppCompatActivity {
     }
 
     private void actualizarDatosUsuario(final String idUsuario, final String correo, final String contraseña) {
-        String URL_ActualizarUsuario = "http://192.168.1.2/travelwise/editar_usuarios.php";
+        String URL_ActualizarUsuario = "http://192.168.0.13/travelwise/editar_usuarios.php";
 
         // Creamos una solicitud POST para enviar los datos al servidor
         StringRequest stringRequestActualizar = new StringRequest(Request.Method.POST, URL_ActualizarUsuario,
@@ -110,7 +110,7 @@ public class Activity_Profile_Edit extends AppCompatActivity {
         String nombreUsuario = preferences.getString("usuario", "admin");
 
         // Modificar la URL para incluir el nombre de usuario como parámetro GET
-        String URL_Usuarios = "http://192.168.1.2/travelwise/obtener_usuarios.php?nombre_usuario=" + nombreUsuario;
+        String URL_Usuarios = "http://192.168.0.13/travelwise/obtener_usuarios.php?nombre_usuario=" + nombreUsuario;
 
         StringRequest stringRequestUsuarios = new StringRequest(Request.Method.GET, URL_Usuarios,
                 new Response.Listener<String>() {

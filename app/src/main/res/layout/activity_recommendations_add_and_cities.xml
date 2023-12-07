@@ -13,7 +13,7 @@
         android:layout_width="394dp"
         android:layout_height="61dp"
         android:layout_marginTop="4dp"
-        android:text="MODIFICAR CIUDAD Y RECOMENDACIONES"
+        android:text="DESCRPCIÓN DE VIAJE"
         android:textAlignment="center"
         android:textColor="#020F5A"
         android:textSize="25sp"
@@ -40,7 +40,7 @@
         android:id="@+id/lblAddCity3"
         android:layout_width="395dp"
         android:layout_height="31dp"
-        android:text="RECOMENDACIONES"
+        android:text="DESCRPCIÓN "
         android:textAlignment="center"
         android:textColor="#020F5A"
         android:textSize="20sp"
@@ -96,8 +96,10 @@
 
         <ListView
             android:id="@+id/listViewRecomendar"
-            android:layout_width="349dp"
-            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="156dp"
+            android:layout_row="0"
+            android:layout_column="0"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
@@ -109,8 +111,8 @@
 
     <GridLayout
         android:id="@+id/gridLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="372dp"
+        android:layout_height="222dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/borde"
         android:columnCount="2"
@@ -123,8 +125,8 @@
 
         <ListView
             android:id="@+id/listViewCiudad"
-            android:layout_width="346dp"
-            android:layout_height="199dp"
+            android:layout_width="wrap_content"
+            android:layout_height="181dp"
             android:layout_row="0"
             android:layout_column="0"
             android:layout_marginTop="16dp"
@@ -136,8 +138,8 @@
 
         <LinearLayout
             android:id="@+id/parentLinearLayout"
-            android:layout_width="347dp"
-            android:layout_height="206dp"
+            android:layout_width="335dp"
+            android:layout_height="171dp"
             android:layout_row="0"
             android:layout_column="0"
             android:orientation="vertical">

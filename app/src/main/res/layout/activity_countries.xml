@@ -19,7 +19,7 @@
             android:layout_width="361dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="SELECCIONA UN PAIS PARA VER TUS REGISTOS DE DESTINO Y MODIFICARLOS, EL BOTON MAS PARA AGREGAR UN NUEVO DESTINO"
+            android:text="SELECCIONA TU ITINERARIO PARA VER TUS REGISTOS, EL BOTÓN + PARA AGREGAR UN NUEVO DESTINO"
             android:textAlignment="center"
             android:textColor="#27016A"
             android:textSize="21sp"

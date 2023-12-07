@@ -99,7 +99,7 @@ public class Add_recommendation extends AppCompatActivity {
     }
 
     private void enviarDatosAlServidor(int selectedCountryID, ArrayList<String> selectedCitiesList, String tituloDestino, String descripcionCiudad, String nombreUsuario) {
-        String URL = "http://192.168.1.2/travelwise/insertar_destino.php";
+        String URL = "http://192.168.0.13/travelwise/insertar_destino.php";
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override

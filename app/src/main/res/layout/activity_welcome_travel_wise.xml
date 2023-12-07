@@ -10,15 +10,15 @@
 
     <TextView
         android:id="@+id/lblBienvenido"
-        android:layout_width="303dp"
-        android:layout_height="168dp"
-        android:layout_marginTop="196dp"
-        android:text="¡Bienvenido a TravelWise! Tu compañero ideal para explorar Centroamérica con sabiduría. Descubre los requisitos de entrada, cotiza hoteles y mucho más. ¡Selecciona tu país y comienza tu aventura ahora mismo!"
+        android:layout_width="291dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="208dp"
+        android:text="¡Bienvenido a TravelWise! Tu compañero ideal para explorar Centroamérica con sabiduría."
         android:textAlignment="center"
         android:textColor="#35028E"
         android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
